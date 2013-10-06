@@ -16,6 +16,7 @@ gem 'zurb-foundation', '>= 4.0.0'
 # Account:
 
 gem 'devise'
+gem "cancan"
 gem 'simple_form'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
