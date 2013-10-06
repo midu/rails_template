@@ -13,6 +13,9 @@ gem 'sass-rails', '~> 4.0.0'
 gem "compass-rails", "~> 2.0.alpha.0"
 gem 'zurb-foundation', '>= 4.0.0'
 
+gem 'carrierwave'
+gem "fog", ">= 1.3.1"
+
 # Account:
 
 gem 'devise'
