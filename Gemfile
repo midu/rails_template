@@ -19,6 +19,9 @@ gem 'devise'
 gem "cancan"
 gem 'simple_form'
 
+gem 'sidekiq'
+
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -33,6 +36,7 @@ gem 'jquery-rails'
 #  gem 'jbuilder', '~> 1.2'
 
 group :development, :test do
+  gem 'spring'
   gem 'rspec-rails'
   gem 'steak'
   gem 'launchy'
