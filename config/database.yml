@@ -1,0 +1,31 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: !! FIXME!!_development
+  pool: 5
+  username: !! FIXME!!
+  password:
+
+staging:
+  adapter: postgresql
+  encoding: unicode
+  database: !! FIXME!!_development
+  pool: 5
+  username: !! FIXME!!
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: !! FIXME!!_test
+  pool: 5
+  username: !! FIXME!!
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: !! FIXME!!_production
+  pool: 5
+  username: !! FIXME!!
+  password:
