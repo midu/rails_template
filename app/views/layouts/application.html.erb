@@ -1,17 +1,40 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
   <title>RailsTemplate</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+  <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/foundation.css" />
+
+  <%= stylesheet_link_tag    "application" %>
   <%= csrf_meta_tags %>
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
 </head>
 <body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+  <header id="header"><%= yield :header %></header>
 
-<%= yield %>
+  <section id="main" role="main">
+    <div class="row">
+      <div class="large-12 columns">
+        <%= yield %>
+      </div>
+    </div>
+  </section>
 
+  <footer id="footer"><%= yield :footer %></footer>
+  <%= javascript_include_tag "application" %>
+  <script>
+    $(document).foundation();
+  </script>
 </body>
 </html>
