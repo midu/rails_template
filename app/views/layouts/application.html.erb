@@ -11,17 +11,23 @@
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/foundation.css" />
 
-  <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag  "application" %>
   <%= csrf_meta_tags %>
 
   <script src="js/vendor/custom.modernizr.js"></script>
 
 </head>
 <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <% if notice || alert %>
+    <div id="flash-messages">
+      <p class="notice alert-box"><%= notice %></p>
+      <p class="alert alert-box"><%= alert %></p>
+    </div>
+  <% end %>
 
-  <header id="header"><%= yield :header %></header>
+  <%= render 'layouts/top_bar' %>
+
+  <%= render 'layouts/header' %>
 
   <section id="main" role="main">
     <div class="row">
