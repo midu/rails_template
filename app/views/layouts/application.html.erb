@@ -18,12 +18,14 @@
 
 </head>
 <body>
-  <% if notice || alert %>
-    <div id="flash-messages">
+  <div id="flash-messages">
+    <% if notice %>
       <p class="notice alert-box"><%= notice %></p>
+    <% end %>
+    <% if alert %>
       <p class="alert alert-box"><%= alert %></p>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 
   <%= render 'layouts/top_bar' %>
 
