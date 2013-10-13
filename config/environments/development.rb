@@ -26,5 +26,9 @@ RailsTemplate::Application.configure do
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
-  config.assets.debug = true
+  config.assets.compress = false
+  config.assets.debug = false
+  config.sass.style = :debug_info
+  config.sass.trace_selectors = true
+  config.sass.debug_info = true
 end

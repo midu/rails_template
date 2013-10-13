@@ -1,3 +1,5 @@
+# make sure to binstup rails and sidekiq
+redis:  redis-server ./config/redis/redis.conf
 web:    rails s
-# worker: some sidekiq command
+worker: sidekiq -C config/sidekiq.yml
 

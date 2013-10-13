@@ -8,13 +8,12 @@
   <title>RailsTemplate</title>
 
   <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/foundation.css" />
+  <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
 
   <%= stylesheet_link_tag  "application" %>
   <%= csrf_meta_tags %>
 
-  <script src="js/vendor/custom.modernizr.js"></script>
+  <!-- script src="js/vendor/custom.modernizr.js"></script -->
 
 </head>
 <body>
@@ -42,7 +41,7 @@
   <footer id="footer"><%= yield :footer %></footer>
   <%= javascript_include_tag "application" %>
   <script>
-    $(document).foundation();
+    //$(document).foundation();
   </script>
 </body>
 </html>

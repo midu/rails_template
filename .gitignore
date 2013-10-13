@@ -20,3 +20,4 @@
 /bin/*
 /public/uploads
 .env
+dump.rdb

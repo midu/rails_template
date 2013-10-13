@@ -3,27 +3,33 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-# Use sqlite3 as the database for Active Record
+# databases
 gem 'pg'
+gem 'redis'
+gem 'redis-objects'
 
 # Assets:
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'sass-rails', '~> 4.0.0'
-gem "compass-rails", "~> 2.0.alpha.0"
+gem 'compass-rails', '~> 2.0.alpha.0'
 gem 'zurb-foundation', '>= 4.0.0'
 
-gem 'carrierwave'
-gem "fog", ">= 1.3.1"
 
 # Account:
 
 gem 'devise'
-gem "cancan"
+gem 'cancan'
 gem 'simple_form'
 
-gem 'sidekiq'
+# file processing
 
+gem 'sinatra' # for sidekiq ui
+gem 'sidekiq'
+gem 'carrierwave'
+gem 'carrierwave_backgrounder'
+gem 'fog', '>= 1.3.1'
+gem 'mini_magick'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -43,7 +49,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'steak'
   gem 'launchy'
-  gem "factory_girl_rails", "~> 4.0"
+  gem 'factory_girl_rails', '~> 4.0'
 
   gem 'pry'
   gem 'pry-debugger'

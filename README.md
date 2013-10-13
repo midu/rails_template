@@ -15,13 +15,14 @@ By default, the dependencies and conventions are:
 
 You do not have to use them all but will need to update the project yourself.
 
-## Includes
+## Includes and encourages uses of:
 
 ### Project
 
 - rails 4
 - ruby 2
 - use binstubs (bundle binstub name_of_the_gem_bin)
+- dotenv
 
 ### Development, test and debug environments
 
@@ -46,6 +47,7 @@ You do not have to use them all but will need to update the project yourself.
 ### Database
 
 - Redis
+- Redis objects
 - PostgreSQL
 
 ### Uploads
