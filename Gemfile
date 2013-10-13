@@ -52,6 +52,7 @@ end
 group :development do
   gem 'guard-livereload'
   gem 'rack-livereload'
+  gem 'foreman'
 end
 
 # Use ActiveModel has_secure_password
