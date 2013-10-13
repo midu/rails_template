@@ -1,1 +1,12 @@
-hello :)
+<h2>You can upload:</h2>
+
+<%= simple_form_for ExamplePhoto.new do |f| %>
+  <%= f.input :photo, as: :file %>
+  <%= f.submit %>
+<% end %>
+
+<h3>Last uploaded photo:</h3>
+
+<figure>
+  <%= image_tag ExamplePhoto.last.photo %>
+</figure>
