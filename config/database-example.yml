@@ -1,31 +1,31 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: !! FIXME!!_development
+  database: rails_template_development
   pool: 5
-  username: !! FIXME!!
+  username: rails_template
   password:
 
 staging:
   adapter: postgresql
   encoding: unicode
-  database: !! FIXME!!_development
+  database: rails_template_development
   pool: 5
-  username: !! FIXME!!
+  username: rails_template
   password:
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: !! FIXME!!_test
+  database: rails_template_test
   pool: 5
-  username: !! FIXME!!
+  username: rails_template
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: !! FIXME!!_production
+  database: rails_template_production
   pool: 5
-  username: !! FIXME!!
+  username: rails_template
   password:
