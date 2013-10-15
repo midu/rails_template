@@ -5,9 +5,11 @@
   <%= f.submit %>
 <% end %>
 
-<h3>Last uploaded photo:</h3>
+<% if ExamplePhoto.last.present? %>
+  <h3>Last uploaded photo:</h3>
 
-<figure>
-  <%= image_tag ExamplePhoto.last.photo %>
-  <%= image_tag ExamplePhoto.last.photo.thumb %>
-</figure>
+  <figure>
+    <%= image_tag ExamplePhoto.last.photo %>
+    <%= image_tag ExamplePhoto.last.photo.thumb %>
+  </figure>
+<% end %>
