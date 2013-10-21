@@ -26,16 +26,11 @@ You do not have to use them all but will need to update the project yourself.
 
 ### Development, test and debug environments
 
+- Spring
 - RSpec
 - Steak
 - FactoryGirl
 - Pry & pry-debugger
-
-#### Run tests faster
-
-Spring will make running your tests faster, but to take advantage of it you need to run it independently (i.e. without `bundle exec`). Install spring gem the old fashioned way
-
-     gem install spring
 
 ### Authentication and Authorization
 
@@ -65,5 +60,42 @@ Spring will make running your tests faster, but to take advantage of it you need
 
 - Sidekiq
 
+
+## Instructions
+
+### Clone the project
+
+    git clone https://github.com/midu/rails_template your_project /path/to/new/project
+    cd /path/to/new/project/
+
+### Update VCS
+
+     rm -rf .git
+
+#### If using git
+
+     git remote add [new_remote]
+
+### Update dependecies
+
+If you know right away that you won't need certain gems, update Gemfie
+
+### Install dependecies
+
+     gem install bundler
+     bundle install
+
+### Run tests faster
+
+Spring will make running your tests faster, but to take advantage of it you need to run it independently (i.e. without `bundle exec`). Install spring gem the old fashioned way
+
+     gem install spring
+
+### Setup default database
+
+- `cp config/database-example.yml config/database.yml`
+- update database name and user
+- `createuser [new_user] --createdb`
+- `rake db:create db:migrate`
 
 
