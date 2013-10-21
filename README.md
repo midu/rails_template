@@ -1,6 +1,6 @@
 ## Description
 
-Opiniated base app.
+Opinionated base app.
 
 ## Dependencies
 
