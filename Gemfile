@@ -48,7 +48,6 @@ gem 'jquery-rails'
 #  gem 'jbuilder', '~> 1.2'
 
 group :development, :test do
-  gem 'spring'
   gem 'rspec-rails'
   gem 'steak'
   gem 'launchy'
@@ -63,6 +62,8 @@ group :development do
   gem 'rack-livereload'
   gem 'foreman'
 end
+
+gem 'whenever', require: false
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

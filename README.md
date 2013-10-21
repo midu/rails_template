@@ -26,11 +26,16 @@ You do not have to use them all but will need to update the project yourself.
 
 ### Development, test and debug environments
 
-- Spring
 - RSpec
 - Steak
 - FactoryGirl
 - Pry & pry-debugger
+
+#### Run tests faster
+
+Spring will make running your tests faster, but to take advantage of it you need to run it independently (i.e. without `bundle exec`). Install spring gem the old fashioned way
+
+     gem install spring
 
 ### Authentication and Authorization
 
