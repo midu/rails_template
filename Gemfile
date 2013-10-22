@@ -48,7 +48,6 @@ gem 'jquery-rails'
 #  gem 'jbuilder', '~> 1.2'
 
 group :development, :test do
-  gem 'spring'
   gem 'rspec-rails'
   gem 'steak'
   gem 'launchy'
