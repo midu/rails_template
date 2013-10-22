@@ -68,19 +68,28 @@ You do not have to use them all but will need to update the project yourself.
     git clone https://github.com/midu/rails_template your_project /path/to/new/project
     cd /path/to/new/project/
 
-### Update VCS
+### Update names
 
-     rm -rf .git
-
-#### If using git
-
-     git remote add [new_remote]
+- find and replace all RailsTemplate and replace them with your project's name
+- find and replace all rails_template and replace them with your project's underscored name
 
 ### Update dependecies
 
 If you know right away that you won't need certain gems, update Gemfie
 
 ### Install dependecies
+
+#### Gemset
+
+If you use gemsets
+
+     cp .ruby-gemset.sample .ruby-gemset
+
+Otherwise
+
+    rm .ruby-gemset.sample
+
+Install gems
 
      gem install bundler
      bundle install
@@ -98,4 +107,13 @@ Spring will make running your tests faster, but to take advantage of it you need
 - `createuser [new_user] --createdb`
 - `rake db:create db:migrate`
 
+### Update VCS
 
+rm -rf .git
+
+#### If using git
+
+     git init
+     git remote add [new_remote]
+     git add .
+     git commit -m ...
