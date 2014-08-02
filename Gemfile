@@ -7,6 +7,9 @@ gem 'rails', '4.0.0'
 # gem 'unicorn'
 gem 'puma'
 
+# uncomment for heroku
+#gem 'rails_12factor', group: :production
+
 # databases
 gem 'pg'
 gem 'redis'
@@ -61,6 +64,7 @@ group :development do
   gem 'guard-livereload'
   gem 'rack-livereload'
   gem 'foreman'
+  gem 'quiet_assets'
 end
 
 gem 'whenever', require: false
