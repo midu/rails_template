@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.1'
 
 # web
 # gem 'unicorn'
@@ -20,7 +20,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'sass-rails'
 gem 'compass-rails'
-gem 'zurb-foundation'
+gem 'foundation-rails', "~> 5.0.0"
 
 # Account:
 
