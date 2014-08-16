@@ -94,6 +94,10 @@ Install gems
      gem install bundler
      bundle install
 
+### Rename you application
+
+    rails g rename NewAppName
+
 ### Run tests faster
 
 Spring will make running your tests faster, but to take advantage of it you need to run it independently (i.e. without `bundle exec`). Install spring gem the old fashioned way
